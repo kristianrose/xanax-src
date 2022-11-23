@@ -177,7 +177,7 @@ MatchCase_Function={
 def menu() -> None:
 	while Exit==False:
 		clear(clean)
-	   	option=str(input('''%s%s%s
+		option=str(input('''%s%s%s
 Bem-Vindo(a) ao %sKinyPainel|Free%s
 Seu Endereço de IP : %s%s%s
 
