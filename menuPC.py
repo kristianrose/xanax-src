@@ -186,7 +186,7 @@ Seu Endereço de IP : %s%s%s
 
 %s[%s Bitcoin : %s1Ff4bHfnpaZjjFvii1AkTjJgusN476paVA %s]
 
-[Discord : %rxanax#9012 e ceu#0006%r]
+[Discord : %sxanax#9012 e ceu#0006%s]
 ____________________________
 |{ %s1%s } Consulta de DDD      |
 |{ %s2%s } Consulta de CNPJ     |
