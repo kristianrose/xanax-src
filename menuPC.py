@@ -178,9 +178,9 @@ def menu() -> None:
 	while Exit==False:
 		clear(clean)
 	       option=str(input('''%s%s%s
-Bem-Vindo(a) ao %sXanax Buscas | Basico%s
+Bem-Vindo(a) ao %sXanax Buscas | FREE%s
 Seu Endereço de IP : %s%s%s
-%s[%s Bitcoin : %s1Ff4bHfnpaZjjFvii1AkTjJgusN476paVA %s]%s
+%s[%s Bitcoin : %s06acdbe2-ccf2-4c14-b8c1-7f0c965f629d %s]
 [Discord : %sxanax#9012 e ceu#0006%s]
 ____________________________
 |{ %s1%s } Consulta de DDD      |
