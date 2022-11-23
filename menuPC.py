@@ -184,7 +184,7 @@ def menu() -> None:
 Bem-Vindo(a) ao %sXanax Buscas | Basico%s
 Seu Endereço de IP : %s%s%s
 
-%s[%s Bitcoin : %s1Ff4bHfnpaZjjFvii1AkTjJgusN476paVA %s]
+%s[%s Bitcoin : %s1Ff4bHfnpaZjjFvii1AkTjJgusN476paVA %s]%s
 
 [Discord : %sxanax#9012 e ceu#0006%s]
 ____________________________
