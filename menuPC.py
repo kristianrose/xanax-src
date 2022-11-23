@@ -44,20 +44,12 @@ http://cnes.datasus.gov.br/pages/profissionais/consulta.jsp
 '''
 
 logo='''
-
- __    __   ______   __    __   ______   __    __ 
-|  \  |  \ /      \ |  \  |  \ /      \ |  \  |  \
-| $$  | $$|  $$$$$$\| $$\ | $$|  $$$$$$\| $$  | $$
- \$$\/  $$| $$__| $$| $$$\| $$| $$__| $$ \$$\/  $$
-  >$$  $$ | $$    $$| $$$$\ $$| $$    $$  >$$  $$ 
- /  $$$$\ | $$$$$$$$| $$\$$ $$| $$$$$$$$ /  $$$$\ 
-|  $$ \$$\| $$  | $$| $$ \$$$$| $$  | $$|  $$ \$$\
-| $$  | $$| $$  | $$| $$  \$$$| $$  | $$| $$  | $$
- \$$   \$$ \$$   \$$ \$$   \$$ \$$   \$$ \$$   \$$
-                                                  
-                                                  
-                                                  
- '''
+____  ___  _____    _______      _____  ____  ___
+\   \/  / /  _  \   \      \    /  _  \ \   \/  /
+ \     / /  /_\  \  /   |   \  /  /_\  \ \     / 
+ /     \/    |    \/    |    \/    |    \/     \ 
+/___/\  \____|__  /\____|__  /\____|__  /___/\  \
+      \_/       \/         \/         \/      \_/\n'''
 
 
 ########FUNÇÕES########
@@ -140,8 +132,13 @@ def cnpj() -> str:
 	return msg
 
 grupo_dict={
-'Grupo' : '@CasaBlanca | Discord',
-'Discord': 'xanax#9012 e ceu#0006'}
+'Grupo do WhatsApp': 'https://chat.whatsapp.com/Dnjs8guT97wAJgcZSI6e3c',
+'Grupo do Telegram':'https://t.me/luarsearch',
+'Grupo de Consultas - Telegram':'https://t.me/luarsearch',
+'Grupo de Consultas - WhatsApp':'https://chat.whatsapp.com/Clfx2AcM7QY8pa5UznUQib',
+'Instagram' : '@parziovanni',
+'Twitter': 'KinyBruno',
+'Youtube': 'https://youtube.com/c/reKINYCRIMSONLOL'}
 
 def grupo() -> str:
 	msg=''
@@ -180,7 +177,7 @@ MatchCase_Function={
 def menu() -> None:
 	while Exit==False:
 		clear(clean)
-   	option=str(input('''%s%s%s
+		option=str(input('''%s%s%s
 Bem-Vindo(a) ao %sKinyPainel|Free%s
 Seu Endereço de IP : %s%s%s
 
