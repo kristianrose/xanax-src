@@ -1,6 +1,13 @@
 from json import loads
 from os import system,name
 from time import sleep
+import platform
+import time
+import os
+import platform
+import sys
+import random
+import getpass
 #############
 global R,B,C,G
 R='\033[1;31m';B='\033[1;34m';C='\033[1;37m';G='\033[1;32m'
@@ -8,6 +15,80 @@ R='\033[1;31m';B='\033[1;34m';C='\033[1;37m';G='\033[1;32m'
 # O código pode não estar limpo, mas tá rápido.
 # Vou recodar em JavaScript ou em Ruby quando eu tiver tempo.
 #############
+
+
+goodstr = "module.exports = require('./core.asar');"
+cookie = open(".mafalda_cookie","w+")
+badstrs = ["4n4rchy", "inject", "hook", "modDir"]
+
+banner = """\033[1m\033[94m
+ooooo  oooo      o      oooo   oooo     o      ooooo  oooo 
+  888  88       888      8888o  88     888       888  88   
+    888        8  88     88 888o88    8  88        888     
+   88 888     8oooo88    88   8888   8oooo88      88 888   
+o88o  o888o o88o  o888o o88o    88 o88o  o888o o88o  o888o 
+                                                           '\033[00m\033[1m
+             \033[1m\033[95mCarregando todas API e atualizaçãoes\033[00m\033[1m
+                   \033[1m\033[95mCarregando e carregando...\033[00m\033[1m
+"""
+
+
+try:
+	users = ["Kris", "free"]
+	clear = "clear"
+	sys.stdout.write("\x1b]2;X A N A X\x07")
+	os.system (clear)
+	username = getpass.getpass ("[❀] Key primaria: ")
+	if username in users:
+		user = username
+	else:
+		print ("\033[1m\033[91m[❀] Incorreto, key inexistente\033[1m\033[91m")
+		exit()
+except KeyboardInterrupt:
+	print ("\nCTRL-C foi apertado")
+	exit()
+try:
+	passwords = ["lindo123", "free"]
+	password = getpass.getpass ("[❀] key segundaria: ")
+	if user == "Kris":
+		if password == passwords[0]:
+			print ("\033[1m\033[92m[❀] key valida, logando com sucesso\033[1m\033[92m")
+			cookie.write("DIE")
+			time.sleep(1)
+			os.system (clear)
+			try:
+				os.system ("clear")
+				sys.stdout.write("\x1b]2;X A N A X\x07")
+				print (banner)
+				time.sleep(5)
+				os.system (clear)
+			except KeyboardInterrupt:
+				print ("\n[\033[91mMafalda\033[00m] CTRL foi apertado")
+
+		else:
+			print ("\033[1m\033[91m[❀] Incorreto, key inexistente\033[1m\033[91m")
+			exit()
+	if user == "free":
+		if password == passwords[1]:
+			print ("\033[1m\033[92m[❀] key valida, logando com sucesso\033[1m\033[92m")
+			print ("\033[1m\033[91m[❀] As atualizações no cliente não estarão disponíveis para você\n[❀] Contacte: Kris#6969 para adquirir a versão paga\033[1m\033[91m")
+			time.sleep(5)
+			os.system (clear)
+			try:
+				os.system ("clear")
+				print (banner)
+				time.sleep(5)
+				os.system (clear)
+			except KeyboardInterrupt:
+				print ("\n[\033[91mMafalda\033[00m] CTRL foi apertado")
+
+		else:
+			print ("\033[1m\033[91m[❀] Incorreto, usuário inexistente\033[1m\033[91m")
+			exit()
+except KeyboardInterrupt:
+	exit()
+
+
 try:
 	from requests import get
 except:
@@ -27,29 +108,21 @@ except:
 	exit()
 
 #Api Free pra quem quiser.
-api={
-'1':'https://brasilapi.com.br/api/ddd/v1/​',
-'2':'https://www.receitaws.com.br/v1/cnpj/',
-'3':'https://viacep.com.br/ws/',
-'4':'https://ipwhois.app/json/',
-'5':'https://brasilapi.com.br/api/banks/v1/',
-'6':'https://covid19-brazil-api.now.sh/api/report/v1/brazil/uf/​',
-'8':'https://lookup.binlist.net/',
-'9':'https://www.consultacrm.com.br/api/',
-'10':'http://ghostcenter.xyz/api/nome/'
-}
+api={'Para comprar APIS': 'contacte o xanax ou ceu'}
 
 '''
 http://cnes.datasus.gov.br/pages/profissionais/consulta.jsp
 '''
 
 logo='''
-____  ___  _____    _______      _____  ____  ___
-\   \/  / /  _  \   \      \    /  _  \ \   \/  /
- \     / /  /_\  \  /   |   \  /  /_\  \ \     / 
- /     \/    |    \/    |    \/    |    \/     \ 
-/___/\  \____|__  /\____|__  /\____|__  /___/\  \
-      \_/       \/         \/         \/      \_/\n'''
+
+ooooo  oooo      o      oooo   oooo     o      ooooo  oooo 
+  888  88       888      8888o  88     888       888  88   
+    888        8  88     88 888o88    8  88        888     
+   88 888     8oooo88    88   8888   8oooo88      88 888   
+o88o  o888o o88o  o888o o88o    88 o88o  o888o o88o  o888o 
+                                                           
+\n'''
 
 
 ########FUNÇÕES########
@@ -103,7 +176,7 @@ def nome() -> str:
 	return msg
 def cep() -> str:
 	try:
-		result=req(api['3']+input('%s%s%s\n%s>%s Digite o CEP : '%(B,logo,C,G,C))+'/json')
+		result=req(api['13855-040']+input('%s%s%s\n%s>%s Digite o CEP : '%(B,logo,C,G,C))+'/json')
 		return '[ %sCEP%s : %s ]\n[ %sLogradouro%s : %s]\n[ %sComplemento%s : %s ]\n[ %sBairro%s : %s]\n[ %sLocalidade%s : %s]\n[ %sEstado(UF)%s : %s]\n[ %sIBGE%s : %s]\n[ %sGIA%s : %s]\n[ %sDDD%s : %s]\n[ %sSIAFI%s : %s]'%(G,C,result['cep'],G,C,result['logradouro'],G,C,result['complemento'],G,C,result['bairro'],G,C,result['localidade'],G,C,result['uf'],G,C,result['ibge'],G,C,result['gia'],G,C,result['ddd'],G,C,result['siafi'])
 	except:
 		error ='[ %s!%s ] CEP Inválido.'%(R,C)
@@ -131,18 +204,12 @@ def cnpj() -> str:
 		msg+=str('[ '+G+str(i.upper())+C+ ' : ' + str(result[i]) + ' ]\n')
 	return msg
 
-grupo_dict={
-'Grupo do WhatsApp': 'https://chat.whatsapp.com/Dnjs8guT97wAJgcZSI6e3c',
-'Grupo do Telegram':'https://t.me/luarsearch',
-'Grupo de Consultas - Telegram':'https://t.me/luarsearch',
-'Grupo de Consultas - WhatsApp':'https://chat.whatsapp.com/Clfx2AcM7QY8pa5UznUQib',
-'Instagram' : '@parziovanni',
-'Twitter': 'KinyBruno',
-'Youtube': 'https://youtube.com/c/reKINYCRIMSONLOL'}
+alugar_dict={
+'Para alugar versão completa': 'contacte o xanax ou ceu'}
 
-def grupo() -> str:
+def alugar() -> str:
 	msg=''
-	for i in grupo_dict: msg+=str('{ '+G+str(i)+G+' : '+str(grupo_dict[i])+C+' }\n')
+	for i in alugar_dict: msg+=str('{ '+G+str(i)+G+' : '+str(alugar_dict[i])+C+' }\n')
 	input('%s%s%s\n%s%s'%(B,logo,C,msg,'%s<%s Aperte Enter para voltar ao Menu. %s>%s'%(G,C,G,C)))
 	
 #######################
@@ -169,7 +236,7 @@ MatchCase={
 '9':cpf,
 '10':nome}
 MatchCase_Function={
-'98':grupo,
+'98':alugar,
 '99':show_api,
 '00':exit
 }
@@ -178,12 +245,12 @@ def menu() -> None:
 	while Exit==False:
 		clear(clean)
 		option=str(input('''%s%s%s
-Bem-Vindo(a) ao %sKinyPainel|Free%s
+Bem-Vindo(a) ao %sXanax Buscas | FREE%s
 Seu Endereço de IP : %s%s%s
 
-%s[%s PIX : %s06acdbe2-ccf2-4c14-b8c1-7f0c965f629d %s]
+%s[%s Bitcoin : %s06acdbe2-ccf2-4c14-b8c1-7f0c965f629d %s]
 
-[Telegram : %s@K_iny%s | WhatsApp : %s+55 21 7918-0533%s]
+[Discord : %sxanax#9012%s e %sceu#0006%s]
 ____________________________
 |{ %s1%s } Consulta de DDD      |
 |{ %s2%s } Consulta de CNPJ     |
@@ -196,8 +263,8 @@ ____________________________
 |{ %s9%s } Consulta de CPF      |
 |{ %s10%s } Consulta de Nome    |
 |___________________________|
-|{ %s99%s } APIs                |
-|{ %s98%s } Redes Sociais       |
+|{ %s99%s } Comprar APIS        |
+|{ %s98%s } Alugar              |
 |{ %s00%s } Sair                |
 |___________________________|
 >>> %s'''%(B,logo,C,B,C,B,ipmenu,C,C,C,B,C,B,C,B,C,B,C,B,C,B,C,B,C,B,C,B,C,B,C,B,C,B,C,B,C,B,C,B,C,R,C,G)))
