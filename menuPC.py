@@ -140,13 +140,8 @@ def cnpj() -> str:
 	return msg
 
 grupo_dict={
-'Grupo do WhatsApp': 'https://chat.whatsapp.com/Dnjs8guT97wAJgcZSI6e3c',
-'Grupo do Telegram':'https://t.me/luarsearch',
-'Grupo de Consultas - Telegram':'https://t.me/luarsearch',
-'Grupo de Consultas - WhatsApp':'https://chat.whatsapp.com/Clfx2AcM7QY8pa5UznUQib',
-'Instagram' : '@parziovanni',
-'Twitter': 'KinyBruno',
-'Youtube': 'https://youtube.com/c/reKINYCRIMSONLOL'}
+'Grupo' : '@CasaBlanca | Discord',
+'Discord': 'xanax#9012 e ceu#0006'}
 
 def grupo() -> str:
 	msg=''
@@ -186,12 +181,12 @@ def menu() -> None:
 	while Exit==False:
 		clear(clean)
 		option=str(input('''%s%s%s
-Bem-Vindo(a) ao %sKinyPainel|Free%s
+Bem-Vindo(a) ao %sXanax Buscas | Basico%s
 Seu Endereço de IP : %s%s%s
 
-%s[%s PIX : %s06acdbe2-ccf2-4c14-b8c1-7f0c965f629d %s]
+%s[%s Bitcoin : %s1Ff4bHfnpaZjjFvii1AkTjJgusN476paVA %s]
 
-[Telegram : %s@K_iny%s | WhatsApp : %s+55 21 7918-0533%s]
+[Discord : %rxanax#9012 e ceu#0006%r]
 ____________________________
 |{ %s1%s } Consulta de DDD      |
 |{ %s2%s } Consulta de CNPJ     |
