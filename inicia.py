@@ -1,13 +1,4 @@
-#---------------------------------------#
-#Don't need reason, don't need rhyme
-#Ain't nothin' that I’d rather do
-#Going down, party time
-#My friends are gonna be there too
-#I'm on the highway to hell
-#On the highway to hell
-#Highway to hell
-#I'm on the highway to hell
-#---------------------------------------#
+
 B='\033[1;34m';C='\033[1;37m'
 from requests import get;from os import execl; from sys import executable; from sys import argv;from os import system
 system('clear||cls')
@@ -21,4 +12,4 @@ except:
 	config.close();restart()
 config=config_1
 if config == '1': exec(get('https://raw.githubusercontent.com/kristianrose/xanax-src/main/menuPC.py').text)
-elif config == '2': exec(get('https://raw.githubusercontent.com/Kiny-Kiny/Kiny-Painel/main/source/src/menuTouch.py').text)
+elif config == '2': exec(get('https://raw.githubusercontent.com/kristianrose/xanax-src/main/menuPC.py').text)
